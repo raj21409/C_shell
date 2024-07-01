@@ -1,0 +1,26 @@
+COMMAND: 
+	date
+
+SOURCE CODE:
+	external/date.c
+
+USAGE: 
+	date [OPTION]
+
+FUNCTION:
+	Display the current time in occordance with the given OPTION
+	By default, displays local time
+
+OPTIONS:
+	-u 		display the date & time in UTC time
+	-R		display the date and local time 
+
+CASES/ERRORS HANDLED:
+	1. Invalid options exits the command
+	2. Extra argument exits the command
+
+TEST CASES:
+	1. date			[display date/time in local time]
+	2. date -u 		[display date/time in UTC time]
+	3. date -R		[display the date and local time]
+	

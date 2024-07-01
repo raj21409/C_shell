@@ -1,0 +1,28 @@
+COMMAND: 
+	ls
+
+SOURCE CODE:
+	external/ls.c
+
+USAGE: 
+	ls [OPTION]... [FILE]... 
+
+FUNCTION:
+	List information about the FILEs (the current directory by default)
+	Sort entries alphabetically (if sort-type OPTION not specified)
+
+OPTIONS:
+	-a		do not ignore entries starting with '.'
+	-l 		display entries sorted according to their names each in different lines
+
+CASES/ERRORS HANDLED:
+	1. Invalid options exits the command
+	2. Invalid permissions for a directory
+	3. Directory not found
+	4. Multiple options
+	5. Ordering of options & arguments
+
+TEST CASES:
+	1. ls					[display contents of the current dir (alphabetically sorted)]
+	2. ls -a folder1		[display contents of folder1]
+	3. ls -l folder1			[display contens of folder1, sorted according to their names each in different lines]

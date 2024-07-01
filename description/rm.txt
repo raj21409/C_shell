@@ -1,0 +1,27 @@
+COMMAND: 
+	rm
+
+SOURCE CODE:
+	external/rm.c
+
+USAGE: 
+	rm [OPTION]... [FILE]...  
+
+FUNCTION:
+	Remove (unlink) the FILE(s)
+
+OPTIONS:
+	-v		removes the file and tells all the information to user
+	-f 		removes file and does not give prompt to user
+
+CASES/ERRORS HANDLED:
+	1. Invalid options exits the command
+	2. Invalid permissions for a directory/file
+	3. Directory/File not found
+	4. Checking if a file is directory or not
+	5. Ordering of options & arguments
+
+TEST CASES:
+	1. rm file1			[remove file1 present in the current directory]
+	2. rm -v file1	    [remove file1 and displays all the cases to user]
+	3. rm -f file1		[remove file1 and does not give any prompts to user]

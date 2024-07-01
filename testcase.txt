@@ -1,0 +1,22 @@
+test case 1:
+
+echo Hello world
+echo -n hello world
+echo -E hello world
+ls
+pwd
+cat 
+cat f.txt
+cat -n f.txt
+cat -E f.txt
+pwd -L
+pwd -P
+
+date -u
+date -R
+
+rm f.txt
+rm -v f.txt
+rm -f f.txt
+
+cd folder1
